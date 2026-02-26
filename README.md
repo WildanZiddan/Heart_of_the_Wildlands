@@ -1,84 +1,84 @@
 # 🌲 Heart of the Wildlands
 
-> **2D Adventure RPG** berbasis Java & JavaFX — Jelajahi dunia, tingkatkan skill, dan kalahkan boss yang menghalangi jalanmu!
+> A **2D Adventure RPG** built with Java & JavaFX — Explore the world, level up your skills, and defeat powerful bosses standing in your way!
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Features
 
-| Fitur | Deskripsi |
+| Feature | Description |
 | :--- | :--- |
-| ⚔️ **Dynamic Combat & Bosses** | Hadapi musuh bervariasi, termasuk tantangan besar seperti *Slime Boss* |
-| 🌳 **Skill Tree System** | Kustomisasi progres karakter dengan pohon skill yang interaktif |
-| 📜 **Quest System** | Selesaikan berbagai misi untuk mendapatkan reward dan progres cerita |
-| 🎨 **FXML Powered UI** | Antarmuka bersih dan terorganisir menggunakan JavaFX Scene Builder |
-| 🏗️ **OOP Architecture** | Struktur kode solid menggunakan prinsip *Object-Oriented Programming* |
+| ⚔️ **Dynamic Combat & Bosses** | Face a variety of enemies, including challenging bosses like the *Slime Boss* |
+| 🌳 **Skill Tree System** | Customize your character's progression with an interactive skill tree |
+| 📜 **Quest System** | Complete various missions to earn rewards and advance the story |
+| 🎨 **FXML Powered UI** | Clean and organized interface built with JavaFX Scene Builder |
+| 🏗️ **OOP Architecture** | Solid code structure following *Object-Oriented Programming* principles |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Komponen | Teknologi |
+| Component | Technology |
 | :--- | :--- |
-| **Bahasa Pemrograman** | Java |
+| **Programming Language** | Java |
 | **UI Framework** | JavaFX & FXML |
 | **IDE** | IntelliJ IDEA |
 | **Version Control** | Git & GitHub |
 
 ---
 
-## 🚀 Cara Menjalankan
+## 🚀 Getting Started
 
 ### Prerequisites
-- JDK 11 atau lebih baru
+- JDK 11 or higher
 - JavaFX SDK
 - IntelliJ IDEA (recommended)
 
-### Langkah-langkah
+### Installation
 
-**1. Clone repositori**
+**1. Clone the repository**
 ```bash
 git clone https://github.com/WildanYazid/Heart_of_the_Wildlands.git
 cd Heart_of_the_Wildlands
 ```
 
-**2. Buka di IntelliJ IDEA**
-- Pilih `File → Open` dan arahkan ke folder project
-- Pastikan SDK Java sudah terkonfigurasi di `Project Structure`
+**2. Open in IntelliJ IDEA**
+- Go to `File → Open` and navigate to the project folder
+- Make sure the Java SDK is configured under `Project Structure`
 
-**3. Konfigurasi JavaFX**
-- Tambahkan library JavaFX di `Project Structure → Libraries`
-- Tambahkan VM options berikut di Run Configuration:
+**3. Configure JavaFX**
+- Add the JavaFX library under `Project Structure → Libraries`
+- Add the following VM options in your Run Configuration:
 ```
 --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml
 ```
 
-**4. Jalankan project**
-- Buka `Main.java` atau entry point utama
-- Klik kanan → **Run**
+**4. Run the project**
+- Open `Main.java` or the main entry point
+- Right-click → **Run**
 
 ---
 
-## 📂 Struktur Project
+## 📂 Project Structure
 
 ```
 Heart_of_the_Wildlands/
 ├── src/
 │   ├── main/
-│   │   ├── Main.java              # Entry point utama
-│   │   ├── GameController.java    # Logika utama jalannya game
-│   │   ├── SkillTree.java         # Pengaturan progres kemampuan karakter
-│   │   └── Quest.java             # Sistem misi dan objektif
+│   │   ├── Main.java              # Main entry point
+│   │   ├── GameController.java    # Core game logic
+│   │   ├── SkillTree.java         # Character skill progression
+│   │   └── Quest.java             # Mission and objective system
 │   └── resources/
-│       ├── game.fxml              # Layout utama arena permainan
-│       └── assets/                # Sprite, sound, dan aset lainnya
+│       ├── game.fxml              # Main game arena layout
+│       └── assets/                # Sprites, sounds, and other assets
 └── README.md
 ```
 
 ---
 
 > [!NOTE]
-> Project ini dikembangkan sebagai bagian dari eksplorasi **Struktur Data** dan pengembangan game berbasis desktop.
+> This project was developed as part of an exploration in **Data Structures** and desktop-based game development.
 
 ---
 
