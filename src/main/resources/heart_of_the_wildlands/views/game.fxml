@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<?import javafx.scene.layout.GridPane?>
+<AnchorPane fx:id="gameRoot" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="heart_of_the_wildlands.controllers.GameController">
+    <!-- Seluruh konten game -->
+    <ImageView fx:id="mapView" fitHeight="1080" fitWidth="1920" preserveRatio="false">
+        <image>
+            <Image url="@../assets/image/map1.png" />
+        </image>
+    </ImageView>
+
+     <!--    Collision-->
+   <Rectangle fx:id="wall1" fill="TRANSPARENT" height="1.0" layoutX="219.0" layoutY="340.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="223.0" />
+   <Rectangle fx:id="wall2" fill="TRANSPARENT" height="36.0" layoutX="405.0" layoutY="482.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="64.0" />
+   <Rectangle fx:id="wall3" fill="TRANSPARENT" height="78.0" layoutX="159.0" layoutY="421.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="64.0" />
+   <Rectangle fx:id="wall4" fill="TRANSPARENT" height="34.0" layoutX="1.0" layoutY="611.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="255.0" />
+   <Rectangle fx:id="wall5" fill="TRANSPARENT" height="64.0" layoutX="1.0" layoutY="319.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="154.0" />
+   <Rectangle fx:id="wall6" fill="TRANSPARENT" height="143.0" layoutX="1.0" layoutY="468.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" />
+   <Rectangle fx:id="wall7" fill="TRANSPARENT" height="223.0" layoutX="258.0" layoutY="117.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="21.0" />
+   <Rectangle fx:id="wall8" fill="TRANSPARENT" height="93.0" layoutX="91.0" layoutY="700.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="256.0" />
+   <Rectangle fx:id="wall9" fill="TRANSPARENT" height="258.0" layoutX="348.0" layoutY="804.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="242.0" />
+   <Rectangle fx:id="wall10" fill="TRANSPARENT" height="284.0" layoutX="850.0" layoutY="798.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="312.0" />
+   <Rectangle fx:id="wall11" fill="TRANSPARENT" height="194.0" layoutX="1205.0" layoutY="747.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="715.0" />
+   <Rectangle fx:id="wall13" fill="TRANSPARENT" height="2.0" layoutX="597.0" layoutY="1075.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="225.0" />
+   <Rectangle fx:id="wall14" fill="TRANSPARENT" height="66.0" layoutX="1655.0" layoutY="683.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="132.0" />
+   <Rectangle fx:id="wall16" fill="TRANSPARENT" height="48.0" layoutX="1638.0" layoutY="262.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="167.0" />
+   <Rectangle fx:id="wall17" fill="TRANSPARENT" height="2.0" layoutX="1102.0" layoutY="263.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="85.0" />
+
+    <!-- Menambahkan player -->
+    <Pane fx:id="characterPane" layoutX="0" layoutY="0" prefHeight="100" prefWidth="100" />
+
+    <!-- Menambahkan slime boss -->
+    <Pane fx:id="slimebossPane" prefHeight="100" prefWidth="100" />
+
+    <!-- HP & LEVEL BAR UI -->
+    <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="93.0" prefWidth="300.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d8564" height="93.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <ImageView fitHeight="76.0" fitWidth="75.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon/icon_hotw.png" />
+         </image>
+      </ImageView>
+        <!-- HP Info -->
+        <Label fx:id="hpLabel" layoutX="96.0" style="-fx-text-fill: white; -fx-font-size: 14;" text="100/100" textFill="WHITE" />
+        <ProgressBar fx:id="hpBar" layoutX="96.0" layoutY="20.0" prefWidth="200" progress="1.0" style="-fx-accent: green;" />
+
+        <!-- Level Info -->
+        <Label fx:id="levelLabel" layoutX="96.0" layoutY="50.0" style="-fx-text-fill: white; -fx-font-size: 14;" text="Lvl 1 - EXP: 0/100" />
+        <ProgressBar fx:id="levelBar" layoutX="96.0" layoutY="70.0" prefWidth="200" progress="0.0" style="-fx-accent: blue;" />
+    </AnchorPane>
+   <Rectangle fx:id="wall12" fill="TRANSPARENT" height="169.0" layoutX="456.0" layoutY="-21.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="1464.0" />
+   <Rectangle fx:id="wall15" fill="TRANSPARENT" height="583.0" layoutX="1970.0" layoutY="165.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="93.0" />
+   <Rectangle fx:id="wall18" fill="TRANSPARENT" height="52.0" layoutX="1148.0" layoutY="322.0" style="-fx-background-color: rgba(255,0,0,0.3);" visible="true" width="39.0" />
+
+<!--    LEVEL UP NOTIFICATION-->
+    <StackPane fx:id="levelUpPane" alignment="CENTER" layoutX="760.0" layoutY="460.0" opacity="0.0" prefHeight="150" prefWidth="400" style="-fx-background-color: rgba(10, 10, 10, 0.85);                   -fx-border-color: gold;                   -fx-border-width: 3;                   -fx-background-radius: 12;                   -fx-border-radius: 12;" visible="false">
+
+        <VBox alignment="CENTER">
+            <Label fx:id="levelUpLabel" style="-fx-text-fill: gold; -fx-font-size: 28px; -fx-font-weight: bold;                       -fx-effect: dropshadow(gaussian, black, 4, 0, 0, 1);" text="LEVEL UP!" />
+
+            <Label fx:id="levelUpSubLabel" style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-style: italic;                       -fx-effect: dropshadow(gaussian, black, 2, 0, 0, 1);" text="You reached level 2. New skill unlocked!" />
+        </VBox>
+    </StackPane>
+
+    <AnchorPane fx:id="inventoryPane"
+                layoutX="14" layoutY="140"
+                prefWidth="400" prefHeight="300"
+                visible="false"
+                style="-fx-background-color: rgba(10, 10, 10, 0.5); -fx-border-color: #bfa76f; -fx-border-width: 3; -fx-background-radius: 10; -fx-border-radius: 10; -fx-effect: dropshadow(gaussian, black, 10, 0.7, 0, 0);">
+
+        <!-- Inventory Title Bar -->
+        <Label text="Inventory"
+               layoutX="20" layoutY="10"
+               textFill="#ffe373"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, black, 2, 0.5, 0, 1);" />
+
+        <!-- Grid for Items -->
+        <GridPane fx:id="inventoryGrid"
+                  layoutX="20" layoutY="50"
+                  hgap="10" vgap="10"
+                  style="-fx-padding: 5;">
+            <!-- We can add <Pane> or <ImageView> for each item slot dynamically -->
+        </GridPane>
+    </AnchorPane>
+
+
+
+</AnchorPane>

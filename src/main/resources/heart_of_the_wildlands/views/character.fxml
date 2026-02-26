@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane fx:id="rootPane" focusTraversable="true" prefHeight="100.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="heart_of_the_wildlands.controllers.CharacterController">
+    <ImageView fx:id="player"
+               fitHeight="100" fitWidth="100"
+               layoutX="960.0" layoutY="400.0"
+               preserveRatio="true" />
+</AnchorPane>
